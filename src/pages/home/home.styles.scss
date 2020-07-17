@@ -1,0 +1,319 @@
+.home {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    #section-1 {
+        position: relative;
+        top: -5rem;
+        height: 120vh !important;
+        width: 100% !important;
+        // border: 1px red solid;
+        z-index: 4;
+
+
+        .wtitle {
+
+            font-size: 2rem;
+            font-weight: 900;
+            line-height: .8em;
+            color: #363636;
+            font-family: Catamaran;
+            vertical-align: baseline;
+            text-transform: uppercase;
+
+        }
+
+        .home-service {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-evenly;
+            align-items: center;
+            // border: rebeccapurple 1px solid;
+
+            &-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                vertical-align: middle;
+
+
+                background-color: red;
+
+                padding: 2rem;
+                width: 124px;
+                height: 124px;
+                margin: 1rem;
+                // box-shadow: ;
+                clip-path: circle(50%at 50% 50%);
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .tag-wrap {
+                filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 0.75));
+            }
+
+            .home-service-infos {
+
+                .wsub-title {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    margin: 0 0 10px;
+                    padding: 10px 0 0;
+                    text-align: left;
+                    color: #363636;
+                    font-family: Catamaran;
+                    vertical-align: baseline;
+                    text-transform: uppercase;
+
+
+                }
+
+                .pservice {
+
+                    font-size: 1rem;
+                    color: #363636;
+                }
+            }
+
+
+        }
+
+        .column-inner {
+
+            padding: 2rem;
+            width: 50%;
+            height: 70%;
+            // border: 1px forestgreen solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        img {
+            position: relative;
+            top: -0.5rem;
+            padding: 0 5px;
+            // width: 100%;
+            // height: 100%;
+            width: 45vw;
+            height: 70vh;
+        }
+    }
+
+    #section-2 {
+        position: relative;
+        top: -10rem;
+        height: 120vh !important;
+        width: 100% !important;
+
+
+        z-index: 3;
+
+        .camsection {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 50%;
+                width: 50%;
+                // border: solid 1px red;
+                margin: auto 3rem;
+            }
+
+            .cam-infos {
+
+
+                .cam-title {
+                    display: block;
+                    text-align: center;
+                    font-size: 2.4rem;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                }
+
+                p {
+
+                    padding: 2rem;
+                }
+
+                .cam-icons {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: flex-start;
+                    margin-bottom: 1rem;
+
+                    .cam-icon {
+
+                        text-align: center;
+                        vertical-align: baseline;
+                        background-color: white;
+                        clip-path: circle(50% at 50% 50%);
+                        color: black;
+
+                        height: 120px;
+                        width: 120px;
+
+
+                        &.cam-icon--big {
+                            height: 140px;
+                            width: 140px;
+                        }
+                    }
+
+
+
+                }
+
+                .cam-button {
+                    color: white;
+                    display: flex;
+
+
+                    a {
+
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        background-color: red;
+                        z-index: 3;
+                    }
+                }
+            }
+        }
+    }
+
+    #section-3 {
+        position: relative;
+        top: -16rem;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        .stitle {
+            h3 {
+                -webkit-tap-highlight-color: transparent;
+                border-width: 0;
+                color: #363636;
+                font-family: Catamaran;
+                font-size: 60px;
+                font-weight: 900;
+                line-height: .8em;
+                margin: 10rem 0 2rem 0;
+                padding: 0;
+                text-align: center;
+                text-decoration: none;
+                text-indent: 0;
+                text-size-adjust: none;
+                vertical-align: baseline;
+                text-transform: uppercase;
+
+            }
+
+            .sinfos {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+
+                p {
+                    display: block;
+                    width: 80%;
+                    text-align: center;
+                    background: yellowgreen;
+                    margin-bottom: 2rem;
+                }
+
+                img {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+    }
+
+    .shape {
+        &.spacer-1 {
+            position: relative;
+            top: -72vh;
+            z-index: 1;
+
+        }
+    }
+
+    #section-4 {
+        position: relative;
+        top: -85rem;
+        z-index: 0;
+
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        .stitle {
+            h3 {
+                -webkit-tap-highlight-color: transparent;
+                border-width: 0;
+                color: #363636;
+                font-family: Catamaran;
+                font-size: 60px;
+                font-weight: 900;
+                line-height: .8em;
+                margin: 10rem 0 2rem 0;
+                padding: 0;
+                text-align: center;
+                text-decoration: none;
+                text-indent: 0;
+                text-size-adjust: none;
+                vertical-align: baseline;
+                text-transform: uppercase;
+
+            }
+
+            .sinfos {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+
+                p {
+                    display: block;
+                    width: 80%;
+                    text-align: center;
+                    background: yellowgreen;
+                    margin-bottom: 2rem;
+                }
+
+                img {
+                    margin-bottom: 2rem;
+                }
+
+                .appstores {
+                    margin-bottom: 2rem;
+
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        margin: 2rem !important;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Catamaran', sans-serif;
+
+    p {
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.react-icons {
+    vertical-align: middle;
+}

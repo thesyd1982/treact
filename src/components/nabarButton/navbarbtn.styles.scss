@@ -1,0 +1,21 @@
+.navbar-btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 1.4em;
+    margin-left: 10px;
+    padding-left: 10px;
+    position: relative;
+
+    .navbar-child {
+
+        position: absolute;
+        display: block;
+        width: 100vw;
+        height: 20vh;
+
+        top: 4rem;
+        left: 0;
+
+    }
+}
