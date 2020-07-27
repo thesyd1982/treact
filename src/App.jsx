@@ -2,7 +2,8 @@ import React from 'react';
 import {BrowserRouter as Router,Switch, Route}from 'react-router-dom';
 import './App.styles.scss';
 
-import Header from './components/header/header.component';
+import Header from './components/core-components/header/header.component';
+import Footer from './components/core-components/footer/footer.component';
 
 import Home from './pages/home/home';
 import About from './pages/about/about';
@@ -40,7 +41,7 @@ function App() {
           </Route>
         </Switch>
      
-
+      <Footer />
     </div>
     </Router>
   );

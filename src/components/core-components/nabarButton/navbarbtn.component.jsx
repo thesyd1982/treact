@@ -2,7 +2,7 @@ import React, {
     // useEffect, useRef, useState ,
     Fragment} from 'react';
 import './navbarbtn.styles.scss'
-import useHover from '../../hooks/useHover';
+import useHover from '../../../hooks/useHover';
 
 
 // import {FiSearch} from 'react-icons/fi';
@@ -18,10 +18,6 @@ const findIcon = (icon) => {
 
     return val
 }
-
-
-
-
 
 const NavbarBtn = ({icon, children}) => {
     const [hoverRef, isHovered] = useHover();

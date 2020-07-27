@@ -1,5 +1,5 @@
 import React from 'react';
-import Hero from '../../components/hero/hero.component';
+import Hero from '../../components/core-components/hero/hero.component';
 const About = () => {
     return (<div className="about">
     

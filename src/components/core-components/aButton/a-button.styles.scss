@@ -1,0 +1,47 @@
+.a-button {
+
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fa3138;
+    border: 3px solid #fa3138;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.01rem;
+    line-height: 1.06667rem;
+    margin-right: .2rem;
+    min-width: 150px;
+    padding: .8rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0;
+    text-size-adjust: none;
+    text-transform: uppercase;
+    transition: all .3s;
+    vertical-align: baseline;
+    white-space: nowrap;
+
+    &:hover {
+        /* :hover */
+        background-color: #fff;
+        color: #fa3138;
+        outline: none;
+    }
+
+    &--black {
+        background-color: #323232;
+        border: 3px solid #323232;
+        color: #fff;
+
+        &:hover {
+            /* :hover */
+            background-color: #fff;
+            color: #323232;
+            outline: none;
+        }
+    }
+}

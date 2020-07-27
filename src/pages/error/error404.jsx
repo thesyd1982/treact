@@ -2,7 +2,7 @@
 import React   from 'react';
 
 import {useLocation} from "react-router-dom";
-import Hero from '../../components/hero/hero.component';
+import Hero from '../../components/core-components/hero/hero.component';
 
 const  NoMatch= () => {
   let location = useLocation();
