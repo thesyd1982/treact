@@ -29,9 +29,14 @@ body {
 
 .container {
     width: 80%;
-    margin: 2rem auto;
+    margin: 0 auto;
 }
 
 .react-icons {
     vertical-align: middle;
+}
+
+.App {
+    position: relative;
+    min-height: 100vh;
 }

@@ -5,13 +5,16 @@ import Shape from '../shape/shape.component';
 
 import {IoLogoFacebook, IoLogoLinkedin, IoLogoTwitter,IoLogoYoutube} from 'react-icons/io'
 import {FiPhone, FiMail} from 'react-icons/fi';
-import { GoLocation} from 'react-icons/go';
-
 
 const footerBg = '/img/footer_bg.jpg'
-const Footer = () => {
-    return (<div className="app-footer">
-         <Shape key={16} id={'footer-1'}  classname={'footer-1'} img={footerBg} w='100vw' h='200px' >
+
+const footerheight = document.documentElement.clientHeight * 0.41;
+
+const Footer = ({position}) => {
+   console.log(position);
+    position = position - footerheight 
+    return (<div className="app-footer" style={{position: 'absolute','top' : position}}>
+         <Shape key={16} id={'footer-1'}  classname={'footer-1'} img={footerBg} w='100vw' h='31vh' >
     <div className="overlay-bg">
       {/* <h3>Profitez de votre comfort</h3> */}
     
@@ -35,11 +38,11 @@ const Footer = () => {
          </div>
          <div className="footer footer-col--body">
          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-             Consequa
+             Consequa   </p>
              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
              Consequatur id amet ut nam eum animi dignissimos natus velit? Quia, officia.
              </p>tur id amet ut nam eum animi dignissimos natus velit? Quia, officia.
-             </p>
+          
          </div>
     </div>
 

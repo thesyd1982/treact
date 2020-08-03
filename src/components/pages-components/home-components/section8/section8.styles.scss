@@ -1,0 +1,75 @@
+.shape {
+
+    &.section {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+        .col-right {
+            position: relative;
+            top: 0;
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: flex-start;
+            width: 50%;
+            height: 100%;
+            background: white;
+            color: black;
+            text-align: right;
+            padding: 1rem;
+
+            h3 {
+                margin-top: 30vh;
+                margin-bottom: 4vh;
+                line-height: 5rem;
+                font-size: 3.75rem;
+                font-weight: 900;
+                width: 80%;
+                align-self: start;
+                text-align: left;
+
+            }
+
+            p {
+
+                width: 80%;
+                margin-bottom: 4vh;
+                text-align: left;
+            }
+
+            .ip-cams-button {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                width: 85%;
+                height: 100%;
+
+                .a-button {
+                    margin-right: 1rem;
+                }
+            }
+
+
+        }
+
+        .col-left {
+
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            img {
+                width: 80%;
+            }
+
+
+        }
+    }
+}

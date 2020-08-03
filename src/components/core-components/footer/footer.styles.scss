@@ -1,12 +1,10 @@
 .app-footer {
-    // height: 41vh;
+    // position: absolute;
+    //bottom: -1px;
+    z-index: 89999;
 
     #footer-1 {
-        position: relative;
-        top: 2.5rem;
-        padding: 14rem;
-        height: 60%;
-        margin-bottom: -2.5rem;
+
 
         .overlay-bg {
             position: absolute;
@@ -17,23 +15,20 @@
             display: block;
             z-index: 3;
             background-color: rgba(17, 17, 17, 0.95);
+
         }
 
 
         .footer {
-            position: relative;
-
-
-
             color: #b0b0b0;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            width: 80%;
+            width: 100%;
 
-            border: 1px solid yellowgreen;
-            margin: auto;
+            // border: 1px solid yellowgreen;
+
 
             &.footer-col {
                 // 
@@ -41,11 +36,13 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                width: 33%;
+                width: 30%;
                 height: 100%;
+                margin-top: 1.5rem;
+                padding: 2.5rem;
 
                 &--title {
-                    margin-top: 8rem;
+
                     color: #fff;
                     display: block;
                     font-size: 1.1rem;
@@ -130,11 +127,11 @@
     }
 
     #footer-2 {
-        position: absolute;
-        bottom: -34vh;
+
         display: flex;
         justify-content: center;
         align-items: center;
+
 
         .copyright {
             color: white;
