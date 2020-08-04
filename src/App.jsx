@@ -1,10 +1,12 @@
-import React, {useEffect ,useState} from 'react';
-import {BrowserRouter as Router,Switch, Route,  useLocation}from 'react-router-dom';
+import React, {useEffect ,useState , Suspense} from 'react';
+import {BrowserRouter as Router,Switch, Route}from 'react-router-dom';
 
 import './App.styles.scss';
 
 import Header from './components/core-components/header/header.component';
 import Footer from './components/core-components/footer/footer.component';
+import Loading from './components/core-components/loading/loading.component';
+
 
 import Home from './pages/home/home';
 import About from './pages/about/about';
@@ -21,47 +23,34 @@ function App() {
   const  [currentPage , setCurrentPage] = useState('/')
   const  [value , setValue] = useState('/')
   const  [footerPos , setFooterPos] = useState(0)
+  const  [loading, setLoading] = useState(true)
 
-
+  
   const handleLoading = () => {
     setFooterPos(height())
+    setTimeout(() => {setLoading(false)},2500)
   }
-
-//   useEffect(() =>{ 
-//     //handleLoading()
-//     if(pageLoaded)
-//     {
-//       console.log('loaded...')
-//       // setLoadingPage(false)
-//     }else{console.log('loading...')
-//     setLoadingPage(true)
-//   }
-//   }
-//  ,[pageLoaded]);
 
  useEffect(() =>{ 
   handleLoading()
-  console.log(' app '+value)
   setCurrentPage(value)
-}
-,[value]);
+  },[value,loading]);
  
 
 
   return (
+    
     <PageContext.Provider value={{value,setValue}}>
     <Router> 
     <div className="App">
-
-    <Header/>
-    
-     {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-           
+    <Suspense fallback={<Loading />}>
+    {!loading?<Header/>:null
+    }       
         <Switch>
        
           <Route  exact path="/">
-            <Home /> 
+          {loading?<Loading />:
+            <Home />}
           </Route>
           <Route path="/about">
             <About />
@@ -77,7 +66,8 @@ function App() {
           </Route>
          
         </Switch>
-        {( (currentPage === value)&&<Footer position={footerPos}/>)}
+        {((currentPage === value && !loading)&&<Footer position={footerPos}/>)}
+        </Suspense>     
     </div>
     </Router>
     </PageContext.Provider>

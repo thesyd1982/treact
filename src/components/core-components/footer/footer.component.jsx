@@ -8,13 +8,12 @@ import {FiPhone, FiMail} from 'react-icons/fi';
 
 const footerBg = '/img/footer_bg.jpg'
 
-const footerheight = document.documentElement.clientHeight * 0.41;
+
 
 const Footer = ({position}) => {
    console.log(position);
-    position = position - footerheight 
     return (<div className="app-footer" style={{position: 'absolute','top' : position}}>
-         <Shape key={16} id={'footer-1'}  classname={'footer-1'} img={footerBg} w='100vw' h='31vh' >
+         <Shape key={16} id={'footer-1'}  classname={'footer-1'} img={footerBg} w='100vw' h='41vh' >
     <div className="overlay-bg">
       {/* <h3>Profitez de votre comfort</h3> */}
     

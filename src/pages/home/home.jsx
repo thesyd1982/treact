@@ -1,8 +1,11 @@
 import React, {useEffect ,useContext} from 'react';
 import {useLocation} from 'react-router-dom' ;
 import PageContext from '../../context/page-context';
+import './home.styles.scss';
 
 import Hero from '../../components/core-components/hero/hero.component';
+import Shape from '../../components/core-components/shape/shape.component';
+
 import Section1 from '../../components/pages-components/home-components/section1/section1.component';
 import Section2 from '../../components/pages-components/home-components/section2/section2.component';
 import Section3 from '../../components/pages-components/home-components/section3/section3.component';
@@ -13,8 +16,8 @@ import Section7 from '../../components/pages-components/home-components/section7
 import Section8 from '../../components/pages-components/home-components/section8/section8.component';
 import Section9 from '../../components/pages-components/home-components/section9/section9.component';
 
-import './home.styles.scss';
-import Shape from '../../components/core-components/shape/shape.component';
+
+
 
 
 

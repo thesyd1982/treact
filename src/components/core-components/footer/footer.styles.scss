@@ -23,7 +23,7 @@
             color: #b0b0b0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             flex-wrap: wrap;
             width: 100%;
 
@@ -32,6 +32,7 @@
 
             &.footer-col {
                 // 
+
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -127,11 +128,9 @@
     }
 
     #footer-2 {
-
         display: flex;
         justify-content: center;
         align-items: center;
-
 
         .copyright {
             color: white;

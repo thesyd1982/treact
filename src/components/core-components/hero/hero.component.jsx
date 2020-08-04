@@ -3,15 +3,15 @@ import './hero.styles.scss';
 
 
 const image =  process.env.PUBLIC_URL + '/img/hero.jpg';
-const background =  process.env.PUBLIC_URL + '/img/hero.jpg';
+// const background =  process.env.PUBLIC_URL + '/img/hero.jpg';
 const cpath = "polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0)";
 
 const Hero = ({title='Hero',img= image,height='100vh', width='100vw',clippath=cpath,children}) => {
     return ( 
     <div className="hero" id='hero' style={{
 
- background:
-  `url(${img}), url(${background})`,
+ background:`url(${img})`, 
+//   ,url(${background})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
